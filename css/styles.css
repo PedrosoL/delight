@@ -1,0 +1,134 @@
+@import "reset.css";
+
+.limiter {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--header);
+}
+
+#ponto {
+  position: absolute;
+  top: 2.7rem;
+  left: 8.5rem;
+  background: var(--body);
+  width: 8px;
+  height: 8px;
+  border-radius: 16px;
+}
+
+#logo {
+  cursor: pointer;
+  height: 100%;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#img-content {
+  max-width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.description {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  opacity: 0.8;
+}
+
+.text {
+  padding: 0 6rem;
+}
+
+.container  {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: var(--body);
+  background-color: var(--header);
+  width: 40%;
+  height: 100%;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.esqueceu-senha {
+  text-align: right;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.esqueceu-senha:hover {
+  filter: brightness(0.1);
+}
+
+.sociais {
+  display: grid;
+  text-align: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.cadastrar {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#cadastre-se {
+  text-align: center;
+  cursor: pointer;
+  color: var(--laranja);
+  transition: filter 0.2s;
+  text-decoration: none;
+}
+
+#cadastre-se:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 1220px) {
+
+  header {
+    width: 400px;
+    margin-left: 2rem;
+  }
+
+  .content {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .description {
+    width: 350px;
+    font-size: 0.8rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .container {
+    width: 400px;
+    font-size: 0.8rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+  }
+}
